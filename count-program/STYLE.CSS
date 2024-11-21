@@ -1,0 +1,37 @@
+#container{
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  margin-left: 200px;
+  margin-top: 100px;
+  background-color: hsl(200, 100%, 56%);
+  text-align: center;
+  border-radius: 200px;
+  box-shadow: 0 0 9px 3px hsl(64, 100%, 62%);
+  
+}
+
+.buttons
+{
+  padding: 10px 20px;
+  align-items: center;
+  margin-top: 50px;
+  background-color: hsl(300, 100%, 67%);
+  color: hsl(0, 0%, 100%);
+  font-size: 20px;
+  box-shadow: 1px 1px 2px black ;
+  border-radius: 5px;
+  
+}
+.buttons:hover{
+   padding: 8px 16px;
+  
+}
+#count{
+  display: block;
+  text-align: center;
+  font-size: 10em;
+  font-family: Helvetica;
+  margin-top: 25px;
+  color: rgb(255, 243, 6);
+}
