@@ -1,0 +1,30 @@
+{
+  "defaults": {
+    "project": 1,
+    "env": 1
+  },
+  "actives": {
+    "project": 1,
+    "env": 1
+  },
+  "projects": [
+    {
+      "idx": 1,
+      "id": "10781000000007123",
+      "name": "count-program",
+      "domain": {
+        "id": "50023607480",
+        "name": "count-program-60034646346.development"
+      },
+      "timezone": "Asia/Kolkata",
+      "env": [
+        {
+          "idx": 1,
+          "id": "60034646346",
+          "name": "Development",
+          "type": 3
+        }
+      ]
+    }
+  ]
+}
