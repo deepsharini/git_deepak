@@ -1,0 +1,161 @@
+      .search-bar {
+      flex: 1;
+      height: 40px;
+      padding-left: 10px;
+      font-size: 15px;
+      border: 1px solid rgb(195, 176, 176);
+      border-radius: 2px;
+      box-shadow: inset 1px 2px 3px
+      rgba(0, 0, 0, 0.05);
+      width: 0;
+      }
+
+      .search-bar::placeholder {
+      font-family: roboto;
+      font-size: 18px;
+      }
+
+      .search-icon {
+      height: 25px;
+      padding-top: 5PX;
+
+      }
+
+      .header {
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      background-color: rgb(255, 255, 255);
+      border-bottom-width: 1PX;
+      border-BOTTOM-style: solid;
+      border-bottom-color: rgb(213, 213, 213);
+      position: fixed;
+      z-index: 100;
+      }
+
+      .left-section { 
+      display: flex;
+      align-items: center;
+
+      }
+      .middle-section {
+
+      flex: 1;
+      margin-right: 55px;
+      margin-left: 70px;
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      } 
+
+      .right-section {
+
+      width: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-right: 20PX;
+      flex-shrink: 0;
+      }
+
+      .hamburger-menu {
+      height: 24px;
+      margin-right: 24px;
+      margin-left: 24px;
+      }
+
+      .youtube-icon {
+      height: 20px;
+      }
+
+      .search-button {
+      height: 40px;
+      width: 60px;
+      background-color: rgb(242, 242, 242);
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(195, 176, 176);
+      margin-left: -1px; 
+
+      }
+      .search-button,
+      .voice-search-button,
+      .upload-icon-container,
+      .apps-icon-container.apps-icon-container,
+      .notification-icon-container{
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+
+      }
+
+      .search-button .TOOLTIP,
+      .voice-search-button .TOOLTIP,
+      .upload-icon-container .TOOLTIP,
+      .apps-icon-container .TOOLTIP,
+      .notification-icon-container .TOOLTIP{
+
+      font-family: roboto;
+      position: absolute;
+      background-color: gray;
+      color: white;
+      padding: 4px 8px 4px 8px;
+      border-radius: 2px;
+      font-size: 12px;
+      bottom: -30px;
+      transition: opacity 0.15s;
+      opacity: 0;
+      pointer-events: none;
+      white-space: nowrap;
+
+      }
+
+      .search-button:hover .TOOLTIP,
+      .voice-search-button:hover .TOOLTIP,
+      .upload-icon-container:hover .TOOLTIP,
+      .apps-icon-container:hover .TOOLTIP,
+      .notification-icon-container:hover .TOOLTIP{
+      opacity: 1;
+      }
+
+
+
+
+
+      .voice-search-button {
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      border: none;
+      margin-left: 10px;
+      margin-top: 3px;
+      }
+
+      .voice-icon {
+      height: 23px;
+      padding-top: 5PX;
+
+      background-color: rgb(243, 238, 238);
+      }
+
+      .upload-icon {
+      height: 24px;
+      }
+
+      .youtube-apps-icon {
+      height: 24px;
+      }
+
+      .notifications-icon {
+      height: 24px;
+      }
+
+      .my-channel-icon {
+      height: 32px;
+      border-radius: 16px;
+      }

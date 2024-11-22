@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&family=Creepster&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Creepster" , system-ui;
+}
+
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-image: url(images/spider-man.jpg);
+  background-position: center;
+  background-size: cover;
+  padding: 0 8%;
+  position: relative;
+}
+.logo{
+  width: 120px;
+  height: 70px;
+  animation: shadow 0.9s cubic-bezier(1, 0.50, 0.50, 1) infinite;
+ 
+  /* backdrop-filter: blur(10px); */
+}
+@keyframes shadow {
+   0%{
+     box-shadow: 0 0 0 transparent;
+   }
+   25%{
+    box-shadow: 1px 2px 1px whitesmoke ;
+   }
+   50%{
+    box-shadow: -1px 2px 1px whitesmoke;
+   }
+   75%{
+    box-shadow: -1px -2px 1px whitesmoke ;
+   }
+   100%{
+    box-shadow: 0 0 0 transparent;
+   }
+}
+.spider{
+  width: 150px;
+  height: 600px;
+  position: absolute;
+  top: -600px;
+  left: 20%;
+  animation: spiderAnimation 2s cubic-bezier(0.68, -0.55, 0.265, 1.55) 1;
+}
+@keyframes spiderAnimation{
+   0% {
+     top: -1000px;
+     opacity: 0;    
+   }
+  }
+
+
+.content {
+  top: 50%;
+  position: absolute;
+  transform: translatex(50px);
+  color: #fff;
+  transition: 0.4s ease;
+}
+.content h1{
+  font-size: 64px;
+  font-weight: bold;
+}
+.content p{
+  font-size: 18px;
+  margin-bottom: 12px;
+  text-shadow: 1px 5px 10px black, 1px 1px 1px white;
+}
+.content h1 span{
+   color: rgb(255, 251, 0);
+}
+.content button{
+   background: transparent;
+   color: white;
+   padding: 12px 20px;
+   border: 2px solid white;
+   border-radius: 22px;
+   outline: none;
+   font-weight: 600;
+   margin-top: 12px;
+   font-size: 26px;
+   box-shadow: 1px 5px 10px black,
+               1px 1px 1px white;
+   transition:  all 0.4s ease}
+.content button:hover{
+   background: transparent;
+   border: 2px solid white;
+   border-color: rgb(248, 248, 248);
+   color: rgb(48, 48, 48);
+   box-shadow:inset 22px 54px 122px rgb(229, 35, 35),
+              inset 10px 40px 122px rgb(255, 31, 31),
+              1px 5px 10px black, 1px 1px 1px white;
+            };
+
+  .time-section .launch-time li{
+     text-decoration: none;
+  }
+
+  .launch-time{
+    display: flex;
+    gap: 28px;
+    text-align: center;
+    margin: 15px 0;
+  }
+  li{
+    list-style-type: none;
+  }
+@media screen and (max-width:900px) {
+  .content{
+    transform: translateX(0);
+  }
+  .content h1{
+     font-size: 40px;
+  }
+}

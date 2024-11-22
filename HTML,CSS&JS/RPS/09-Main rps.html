@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>booleans</title>
+   <link rel="stylesheet" href="Rps.css">
+</head>
+
+     <!--This is the body of the document-->
+
+<body>
+
+<div>
+   <p class="title">rock paper scissors</p>
+
+   <!--this is the rock section -->
+
+<button class="move-button" onclick="
+ playgame ('rock');
+ "><img src="rps-img/rock-emoji.png" class="move-icon">
+</button>
+
+     <!-- this is paper section  -->
+<button class="move-button" onclick="
+ playgame('paper');
+ "><img src="rps-img/paper-emoji.png" class="move-icon">
+</button>
+
+    <!-- this is scissor section -->
+
+<button class="move-button" onclick="
+ playgame ('scissors');
+ "><img src="rps-img/scissors-emoji.png" class="move-icon">
+</button> 
+  <!-- (result , moves , score) Section -->
+<p class="js-result "></p>
+<p class="js-moves move-icon"></p>
+<p class="js-score"></p>
+
+
+<button onclick="
+ score.wins = 0,
+ score.losses= 0 ,
+ score.Tie = 0 
+ localStorage.removeItem ('score')
+ updateScoreElement ();
+ " class="reset-score">reset score
+</button>
+
+
+</div>
+
+
+
+<script src="rps.js"></script>
+
+
+</body>
+</html> 

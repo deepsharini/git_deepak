@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Weather App</title>
+</head>
+<body>
+   
+  <main>
+  <form action="">
+       <input type="text" autocomplete="off" placeholder="Enter city Here...." id="searchBox"> 
+  <button> 
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>   
+</form>
+  <section class="result">
+    <figure class="name" id="city">
+      <figcaption id="city-name"></figcaption>
+      <img src="https://flagsapi.com/IN/shiny/64.png">      
+    </figure>
+    <figure class="temprature">
+       <img src="https://openweathermap.org/img/wn/10d@2x.png">
+       <figcaption>
+        <span></span>
+        <sup>0</sup>
+       </figcaption>
+      
+       <p class="description"></p>
+        <ul>
+          <li>
+             <span>clouds</span>
+             <i class="fa-solid fa-cloud"></i>
+             <span id="clouds"></span>%
+          </li>
+          <li>
+            <span>Humidity</span>
+            <i class="fa-solid fa-droplet"></i>
+            <span id="Humidity"></span>%
+          </li>
+          <li>
+            <span>pressure</span>
+            <i class="fa-solid fa-gauge-high"></i>      <span id="pressure"></span>hps
+          </li>
+        </ul>     
+    </figure>
+ </section>
+</main>
+ 
+  <script src="index.js"> </script>
+</body>
+</html>

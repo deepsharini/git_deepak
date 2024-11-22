@@ -1,0 +1,49 @@
+body{
+  background-color: rgb(27, 27, 27);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-left: 25%;
+
+}
+
+div{
+  align-items: center;
+  width: 50%;
+  margin-left: 100px;
+  padding: 20px;
+  border: 1px solid white ;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+flex-wrap: wrap;}
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.move-icon {
+  height: 50px;
+}
+
+.move-button {
+  background-color: transparent;
+  border: 3px solid white ;
+  border-radius: 80px;
+  padding: 30px;
+  margin-right: 12px;
+}
+
+.js-result{
+  font-size: 17px;
+}   
+
+.reset-score {
+  padding: 10px 12px;
+  border-radius: 5px;
+  background-color: rgb(203, 255, 59);
+  font-weight: bold;
+} 
